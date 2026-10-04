@@ -1,0 +1,6 @@
+# Nunca envie chaves para o GitHub: elas ficam nas variáveis de ambiente da Netlify
+.env
+.env.*
+.netlify/
+node_modules/
+*.php

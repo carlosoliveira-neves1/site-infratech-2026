@@ -1,0 +1,8 @@
+# Configuração da Netlify
+# O site é estático (HTML/CSS/JS) e o assistente do chat roda como função em netlify/functions.
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
