@@ -116,7 +116,7 @@
     // pré-seleciona o interesse quando vem de um link como contato.html?interesse=mobile
     const pre = new URLSearchParams(location.search).get('interesse');
     if (pre) {
-      const map = { integracoes: 0, mobile: 1, sistemas: 2, automacoes: 3 };
+      const map = { hub: 0, integracoes: 1, mobile: 2, sistemas: 3, automacoes: 4 };
       if (pre in map) form.interesse.selectedIndex = map[pre];
     }
     form.addEventListener('submit', async (e) => {
@@ -229,7 +229,7 @@
     if (/diagn/.test(t))
       return { reply: 'O diagnóstico é gratuito e leva de 1 a 2 semanas. Mapeamos seus sistemas, processos e gargalos e, no final, enviamos uma proposta com escopo, prazo e investimento. Quer agendar?' };
     if (/solu|servi|oferec|fazem/.test(t))
-      return { reply: 'Temos quatro frentes:\n• Integrações entre ERP, PDV, e-commerce e marketplaces\n• Apps mobile para clientes e equipe\n• Sistemas sob medida e dashboards\n• Automações como conciliação e preços em massa\nQual delas faz mais sentido para você?' };
+      return { reply: 'Temos o Infratech Hub e quatro frentes de projetos:\n• Infratech Hub: marketplaces, loja virtual, totem e lojas numa plataforma só\n• Integrações entre ERP, PDV, e-commerce e marketplaces\n• Apps mobile para clientes e equipe\n• Sistemas sob medida e dashboards\n• Automações como conciliação e preços em massa\nQual delas faz mais sentido para você?' };
     return { reply: 'Entendi! Para eu te ajudar melhor, me conta um pouco sobre a sua operação: qual é o segmento e qual desafio você quer resolver?' };
   };
 
