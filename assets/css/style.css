@@ -571,3 +571,8 @@ footer{padding-block:clamp(48px,6vw,72px) 28px}
 /* Infratech Hub (página Soluções) */
 .hub-video{width:100%;aspect-ratio:16/9;border-radius:14px;background:#050B18;display:block;border:1px solid rgba(255,255,255,.08)}
 .hub-acts{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.hub-demo{margin-top:24px;padding:16px 18px;border-radius:14px;border:1px dashed rgba(255,164,27,.55);background:rgba(255,164,27,.07)}
+.hub-demo p{margin:6px 0 0;color:var(--muted,#9fb0c8)}
+.hub-demo-tag{font:600 .72rem/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:#FFC56B}
+.hub-cred{color:#fff!important;font-weight:600}
+.hub-cred code{font:500 .9rem var(--f-mono);background:rgba(255,255,255,.1);padding:3px 8px;border-radius:6px;color:#FFC56B}
