@@ -143,7 +143,7 @@
         form.reset();
       } catch (err) {
         status.className = 'err';
-        status.innerHTML = 'Não foi possível enviar agora. Tente novamente ou <a href="https://wa.me/5511986489257" target="_blank" rel="noopener">fale pelo WhatsApp</a>.';
+        status.innerHTML = 'Não foi possível enviar agora. Tente novamente ou <a href="https://wa.me/5511921762379" target="_blank" rel="noopener">fale pelo WhatsApp</a>.';
       } finally {
         btn.disabled = false; btn.textContent = 'Enviar mensagem';
       }
@@ -164,7 +164,7 @@
   const form = document.getElementById('chat-form');
   const input = document.getElementById('chat-input');
   const sendBtn = form.querySelector('button');
-  const WA = '5511986489257';
+  const WA = '5511921762379';
   const WA_ICON = '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.5L3 29l6.7-1.7A13 13 0 1 0 16 3zm6 18.7c-.3.8-1.5 1.5-2.2 1.5-.6.1-1.3.1-2-.1-.5-.2-1-.3-1.8-.7-3.2-1.4-5.3-4.6-5.4-4.8-.2-.2-1.3-1.7-1.3-3.3s.8-2.3 1.1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .5 0 .7.6.3.6.9 2.2 1 2.3.1.2.1.4 0 .6-.1.2-.2.4-.3.5l-.5.6c-.2.2-.3.3-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.2.5.1.7-.1.2-.2.8-.9 1-1.3.2-.3.4-.3.7-.2.3.1 1.9.9 2.2 1 .3.2.5.2.6.4.1.1.1.7-.2 1.5z"/></svg>';
   const DEMO = window.INFRATECH_CHAT_DEMO === true;
 

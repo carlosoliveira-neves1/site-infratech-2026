@@ -6,7 +6,7 @@
 //    GEMINI_API_KEY   (obrigatória) chave do Google AI Studio
 //    GEMINI_MODELO    (opcional)   padrão: gemini-3.5-flash
 //    GEMINI_RESERVA   (opcional)   modelos reserva separados por vírgula
-//    WHATSAPP         (opcional)   padrão: 5511986489257
+//    WHATSAPP         (opcional)   padrão: 5511921762379
 // ============================================================
 
 export const config = { path: '/api/chat' };
@@ -31,7 +31,7 @@ SOBRE A INFRATECH
 - Segmentos atendidos: supermercados e atacarejo, moda e calçados, farmácias e perfumarias, materiais de construção, eletro e eletrônicos, distribuidores e indústria.
 - Como trabalha: 1) Diagnóstico (1 a 2 semanas), 2) Protótipo (2 a 3 semanas), 3) Desenvolvimento em sprints quinzenais, 4) Implantação e suporte contínuo.
 - Primeiro passo para qualquer cliente: reunião inicial gratuita e diagnóstico, seguido de proposta com escopo, prazo e investimento.
-- Contato: WhatsApp (11) 98648-9257 ou o formulário da página Contato. Resposta em até 1 dia útil.
+- Contato: WhatsApp (11) 92176-2379 ou o formulário da página Contato. Resposta em até 1 dia útil.
 - A Infratech é uma empresa do Grupo Better, formado por três empresas: Better Engenharia e Proteção (no mercado desde 2003; engenharia e proteção, equipe operacional, manutenção e conservação predial, de áreas verdes e de grandes glebas), B2 Engenharia e Construção (mesmo ramo da Better: engenharia e construção, obras, manutenção e conservação predial, de áreas verdes e de grandes glebas), e a Infratech (tecnologia para o varejo). Se o visitante procurar serviços de engenharia, construção, manutenção predial ou proteção, explique que são feitos pela Better ou pela B2 e indique o site https://betterengenharia.com.br/. Não detalhe serviços dessas empresas além do descrito aqui.
 
 COMO ATENDER
@@ -151,5 +151,5 @@ export default async (req, context) => {
     texto = texto.replace(/\[\[CONTATO\|[\s\S]+?\]\]/g, '').trim();
   }
 
-  return responder({ ok: true, reply: texto, handoff: repasse, whatsapp: env('WHATSAPP', '5511986489257') });
+  return responder({ ok: true, reply: texto, handoff: repasse, whatsapp: env('WHATSAPP', '5511921762379') });
 };

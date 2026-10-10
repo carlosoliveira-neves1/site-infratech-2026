@@ -14,7 +14,7 @@ Site institucional da Infratech, preparado para publicar na Netlify a partir do 
    - `GEMINI_API_KEY` = a chave gerada em https://aistudio.google.com
 4. Faça um novo deploy (**Deploys › Trigger deploy**) para a chave passar a valer.
 
-Variáveis opcionais: `GEMINI_MODELO` (padrão `gemini-3.5-flash`), `GEMINI_RESERVA` (modelos reserva separados por vírgula, padrão `gemini-3.5-flash-lite`) e `WHATSAPP` (padrão `5511986489257`).
+Variáveis opcionais: `GEMINI_MODELO` (padrão `gemini-3.5-flash`), `GEMINI_RESERVA` (modelos reserva separados por vírgula, padrão `gemini-3.5-flash-lite`) e `WHATSAPP` (padrão `5511921762379`).
 
 A Netlify encerra a função do chat em 10 segundos no plano grátis, por isso os modelos padrão são os mais rápidos. Se trocar o modelo, prefira um que responda em poucos segundos.
 
